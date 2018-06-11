@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lodo Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+   {
+      alert("Enter the value of dice in the last box. alue in the textbox");
+    }
+    </script>
+
+    <img src="./images/player1.png" id="tokenB1" class="tokens" >
+
+    	<img src="./images/player1.png" id="tokenB2" class="tokens">
+      <img src="./images/Player2.png" id="tokenA1" class="tokens" onclick="moveToken('A1')">
+
+    	<img src="./images/Player2.png" id="tokenA2" class="tokens" onclick="moveToken('A2')">
+
+<div id = "board">
+
+
+
+<div class="box top" id="startA"></div>
+  <div class="box top"></div>
+  <div class="box top"></div>
+  <div class="box top"></div>
+  <div class="box top"></div>
+  <div class="box top"></div>
+  <div class="box top"></div>
+  <div class="box top"></div>
+
+
+
+
+  <div  id="endA" class="box left" ></div>
+  <div class="box left"></div>
+  <div class="box left"></div>
+  <div class="box left"></div>
+  <div class="box left"></div>
+  <div class="box left"></div>
+  <div class="box rightboxes"></div>
+  <div class="box rightboxes"></div>
+  <div class="box rightboxes"></div>
+  <div class="box rightboxes"></div>
+  <div class="box rightboxes"></div>
+  <div class="box rightboxes" id="endB"></div>
+
+
+
+  <div class="box bottom" id="bottomleft"></div>
+  <div class="box bottom"></div>
+  <div class="box bottom"></div>
+  <div class="box bottom"></div>
+  <div class="box bottom"></div>
+  <div class="box bottom"></div>
+  <div class="box bottom"></div>
+  <div class="box bottom" id="startB"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="a" class="locker" onclick="release('a')">
+			<h2>Locker for A</h2>
+		</div>
+
+		<div id="b" class="locker" onclick="release('b')">
+			<h2>Locker for B</h2>
+		</div>
+
+
+
+
+</div>
+  <div class = "centerbox">
+
+
+
+
+  <script type="text/javascript" src="./scrpt/functions.js"></script>
+
+
+
+
+
+
+    <div id="center">
+
+        TURN of Player A
+
+      <button onclick="rolldice()" id = "roll">Click to roll</button>
+
+
+        <input type="number" id="dice">
+
+      </div>
+<script>
+
+
+function rolldice() {
+var diceval = Math.floor(Math.random()*6+1);
+var imag = "";
+
+
+switch(diceval) {
+
+  case 1: imag = <img src = "./images/one.jpg"> </img>; break;
+
+  case 2:imag = <img src="./images/Two.jpg"> </img>; break;
+
+  case 3: imag = <img src="./images/Three.jpg"> </img>; break;
+
+  case 4: imag = <img src="./images/four.jpg"> </img>; break;
+
+   case 5:imag = <img src="./images/five.jpg"> </img>; break;
+
+  case 6: imag = <img src="./images/Six.jpg"> </img>; break;
+
+}
+document.getElementById("output-image").innerHTML = imag;
+}
+
+
+
+
+</script>
+
+
+<div id="output-image"></div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
